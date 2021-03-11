@@ -29,7 +29,7 @@ runs:
     - name: Unzip sources
       run: |
         cd ${{inputs.sources_destination}}
-        7z x -y SDL2_image-devel-${{inputs.version}}-VC
+        7z x -y SDL2_image-devel-${{inputs.version}}-VC.zip
         del SDL2_image-devel-${{inputs.version}}-VC.zip
       shell: cmd
 
